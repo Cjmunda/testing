@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Units</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #4B0082;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .ad-container {
+            background: linear-gradient(145deg, #9370DB, #800080);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+	}
+	.ad-container1 {
+            background: linear-gradient(145deg, #7b1fa2, #9370DB);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+        }
+	.price {
+            background-color: #7b1fa2;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .title {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .details {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 20px;
+            display: none; /* Hidden by default */
+        }
+        .details span {
+            display: block;
+            margin: 5px 0;
+        }
+        .image {
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+        }
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #7b1fa2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #5e118a;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container1">
+	<div class="title">⇩BUDGET MEAL PC BUILD⇩</div>
+    </div> 
+    <!-- AMD Ryzen 7 5700G System Unit -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="pc1.jpg" alt="AMD Ryzen 7 5700G System Unit">
+        </div>
+        <div class="price">PHP 18,995</div>
+        <div class="title">AMD Ryzen 7 5700G System Unit</div>
+        <div class="details">
+            <span>AMD Ryzen 7 5700G 3.8GHz (Up to 4.6GHz) Octa Core Processor</span>
+            <span>B450M-A Pro Max II Socket AM4 DDR4 Motherboard</span>
+            <span>Vulcan TUF 16GB (2x8GB) DDR4 3200MHz Memory</span>
+            <span>MP33 Pro 512GB M.2 PCIe Gen3.0 x4 NVMe SSD</span>
+            <span>AC-550 550W 80+ Bronze Fully Modular Power Supply</span>
+            <span>Gamma C50-WHG000XX-GL mATX Gaming PC Case White</span>
+        </div>
+        <button onclick="toggleDetails(this)">More Information</button>
+    </div>  
+    <script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+<!-- AMD Ryzen 5 5500 System Unit + RX 580 -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc2.jpg" alt="AMD Ryzen 5 5500 System Unit + RX 580">
+        </div>
+        <div class="price">PHP 19,995</div>
+        <div class="title">AMD Ryzen 5 5500 System Unit + RX 580</div>
+        <div class="details">
+            <span>AMD Ryzen 5 5500 3.6GHz (Up to 4.2GHz) Hexa Core Processor</span>
+            <span>B450M-A PRO MAX II Socket AM4 DDR4</span>
+            <span>Biostar Radeon RX 580 (VA5805RV82) Dual Cooling Fan 8GB GDDR5 256-bit</span>
+            <span>Vulcan TUF 16GB (2x8GB) DDR4 3200MHz</span>
+            <span>MP33 PRO 512GB M.2 PCIe Gen3.0 x4 NVMe SSD</span>
+            <span>AC-550 550W 80+ Bronze Fully Modular</span>
+            <span>Rakk Anyag ATX Tempered Glass Gaming Case (Black)</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+    <!-- AMD Ryzen 5 5600G System Unit -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc3.jpg" alt="AMD Ryzen 5 5600G System Unit">
+        </div>
+        <div class="price">PHP 15,995</div>
+        <div class="title">AMD Ryzen 5 5600G System Unit</div>
+        <div class="details">
+            <span>AMD Ryzen 5 5600G 3.9GHz (Up to 4.4GHz), Socket AM4 Hexa Core Processor</span>
+            <span>A520MHP Socket AM4 DDR4 Motherboard</span>
+            <span>Vulcan TUF 16GB (2x8GB) DDR4 3200MHz Memory</span>
+            <span>MP33 256GB M.2 PCIe NVMe SSD</span>
+            <span>AC-550 550W 80+ Bronze Fully Modular</span>
+            <span>Gamma C50-BKG000XX-GL MATX Gaming PC Case (Black)</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+    <!-- AMD Ryzen 5 5600G System Unit (Second Version) -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc4.jpg" alt="AMD Ryzen 5 5600G System Unit">
+        </div>
+        <div class="price">PHP 15,995</div>
+        <div class="title">AMD Ryzen 5 5600G System Unit</div>
+        <div class="details">
+            <span>AMD Ryzen 5 5600G 3.9GHz with Radeon Vega 7, Wraith Stealth Cooler</span>
+            <span>A520MH 3.1 Socket AM4 DDR4</span>
+            <span>Team Elite Vulcan TUF 16GB (2x8GB) DDR4 3200MHz</span>
+            <span>Team Group MP33 256GB M.2 PCIe NVMe SSD</span>
+            <span>DB330M Micro ATX PC Case with 550W PSU</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+    <div class="ad-container1">
+	<div class="title">⇩MID END PC BUILD⇩</div>
+    </div>
+<!-- First System Unit Ad (AMD Ryzen 5 5600 + GTX 1650) -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc5.jpg" alt="AMD Ryzen 5 5600 System Unit">
+        </div>
+        <div class="price">PHP 25,995</div>
+        <div class="title">AMD Ryzen 5 5600 System Unit + GTX 1650</div>
+        <div class="details">
+            <span>AMD Ryzen 5 5600 3.5GHz w/ Wraith Cooler</span>
+            <span>B450M PRO VDH MAX Socket AM4 DDR4 Motherboard</span>
+            <span>GTX 1650 EX Plus 1-Click OC 4GB 128Bit Gaming Videocard</span>
+            <span>Team Elite Vulcan TUF 16GB 2x8 3200MHz DDR4 Memory</span>
+            <span>Team Group MP33 256GB M.2 PCIe NVMe SSD</span>
+            <span>DB330M Micro ATX PC Case Black w/ 550W PSU</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+<!-- Second System Unit Ad (AMD Ryzen 5 5600 + RX 6600) -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc6.jpg" alt="AMD Ryzen 5 5600 System Unit + RX 6600">
+        </div>
+        <div class="price">PHP 29,995</div>
+        <div class="title">AMD Ryzen 5 5600 System Unit + RX 6600</div>
+        <div class="details">
+            <span>AMD Ryzen 5 5600 3.5GHz (Up to 4.4GHz) Socket AM4 Hexa Core Processor</span>
+            <span>GA-B450M-DS3H V3 Socket AM4 DDR4 Motherboard</span>
+            <span>Radeon RX 6600 8G Challenger D 8GB GDDR6 128-bit Gaming Video Card</span>
+            <span>Vulcan TUF 16GB (2x8GB) DDR4 3200MHz Memory</span>
+            <span>MP33 Pro 512GB M.2 PCIe Gen3.0 x4 NVMe 1.3 Solid State Drive</span>
+            <span>AC-650 650W 80+ Bronze Fully Modular Power Supply</span>
+            <span>DLM21 Mesh Mid Tower Gaming PC Case White</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+<!-- Messenger System Ad -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc7.jpg" alt="Messenger System Unit">
+        </div>
+        <div class="price">PHP 24,950</div>
+        <div class="title">Messenger System Unit</div>
+        <div class="details">
+            <span>Intel i3-12100F 3.30GHz</span>
+            <span>ASUS Prime H610-R D4 DDR4 Motherboard</span>
+            <span>ASUS Phoenix GTX 1650</span>
+            <span>16GB DDR4</span>
+            <span>256GB M.2</span>
+            <span>550Watts Bronze</span>
+            <span>MATX Casing Black</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+<!-- Yojimbo PC Offer -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc8.jpg" alt="Yojimbo PC Offer">
+        </div>
+        <div class="price">PHP 29,995</div>
+        <div class="title">Yojimbo PC Offer</div>
+        <div class="details">
+            <span>AMD Ryzen 5 5500 3.6GHz</span>
+            <span>ASUS Prime B450M-K II AM4 DDR4</span>
+            <span>ASUS Dual Radeon RX 6600 8GB GDDR6</span>
+            <span>16GB DDR4</span>
+            <span>256GB M.2 NVMe</span>
+            <span>550 Watts Bronze</span>
+            <span>ATX Casing Black</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+    <div class="ad-container1">
+	<div class="title">⇩HIGH END PC BUILD⇩</div>
+    </div>
+<!-- AMD Ryzen 7 5700X System Unit + RTX 3060 -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc9.jpg" alt="AMD Ryzen 7 PC Offer">
+        </div>
+        <div class="price">PHP 44,995</div>
+        <div class="title">AMD Ryzen 7 5700X System Unit + RTX 3060</div>
+        <div class="details">
+            <span>AMD Ryzen 7 5700X 3.4GHz Processor</span>
+            <span>GAMMAXX AG400 120mm CPU Cooler</span>
+            <span>B550M Pro SE Motherboard</span>
+            <span>GeForce RTX 3060 12GB GDDR6</span>
+            <span>TForce Delta 16GB DDR4 3200MHz</span>
+            <span>NM610 Pro 1TB NVMe SSD</span>
+            <span>MAG A650BN 650W Power Supply</span>
+            <span>DLM22 Mid Tower Case White</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+<!-- Intel i5-12400 System Unit + RTX 3060 -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc10.jpg" alt="Intel i5-12400 PC Offer">
+        </div>
+        <div class="price">PHP 44,995</div>
+        <div class="title">Intel Core i5-12400 System Unit + RTX 3060</div>
+        <div class="details">
+            <span>Intel Core i5-12400 2.5GHz</span>
+            <span>B760M-K D4 Motherboard</span>
+            <span>Lexar Thor 8GB DDR4 3200MHz</span>
+            <span>Lexar NM610 Pro 1TB NVMe SSD</span>
+            <span>RTX 3060 12GB GDDR6</span>
+            <span>NX200M Micro-ATX Case w/ 650W PSU</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+<!-- AMD Ryzen 5 9600X System Unit + RX 7800 -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc11.jpg" alt="System Unit Image">
+        </div>
+        <div class="price">PHP 77,995</div>
+        <div class="title">AMD Ryzen 5 9600X System Unit + RX 7800</div>
+        <div class="details">
+            <span>AMD Ryzen 5 9600X 3.9GHz AM5</span>
+            <span>Gammaxx AG400 CPU Cooler</span>
+            <span>Pro B650M-P AM5 DDR5 Motherboard</span>
+            <span>Lexar Thor OC 32GB DDR5 5600MHz</span>
+            <span>Lexar NM610 Pro 1TB NVMe SSD</span>
+            <span>ASRock RX 7800 XT 16GB GDDR6</span>
+            <span>DS900 Aquarium ATX Case w/ 750W PSU</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+<!-- DIONYSUS System Unit -->
+    <div class="ad-container">
+        <div class="image">
+            <img src="C:\Users\Workstation\Desktop\pc12.jpg" alt="Dionysus System Unit">
+        </div>
+        <div class="price">PHP 134,495</div>
+        <div class="title">DIONYSUS</div>
+        <div class="details">
+            <span>Intel Core i9-14900K 3.20GHz</span>
+            <span>ASUS ProArt Z790 Creator WiFi</span>
+            <span>ASUS GeForce RTX 4070 OC</span>
+            <span>32GB DDR5 6600MHz</span>
+            <span>1TB NVMe M.2 SSD</span>
+            <span>240mm AIO Liquid Cooler</span>
+            <span>750W Bronze Power Supply</span>
+            <span>ATX Casing Black</span>
+        </div>
+	<button onclick="toggleDetails(this)">More Information</button>
+    </div>
+<script>
+        function toggleDetails(button) {
+            const details = button.previousElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Information";
+            } else {
+                details.style.display = "none";
+                button.textContent = "More Information";
+            }
+        }
+    </script>
+
+</body>
+</html>
